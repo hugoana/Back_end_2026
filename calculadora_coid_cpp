@@ -1,0 +1,39 @@
+#include <stdio.h>
+void soma (int a, int b){
+	int c = a + b;
+	printf("\nresultado: %d", c);
+}
+void subtracao (int a, int b){
+	int c = a - b;
+	printf("\nresultado: %d", c);
+}
+
+void multiplicacao (int a, int b){
+	int c = a * b;
+	printf("\nresultado:%d", c);
+}
+
+void divisao (int a, int b){
+	int c = a / b;
+	printf("\nresultado: %d", c);
+}
+
+int main() {
+	int escolha, n1, n2;
+	printf("escolhe entre das opcoes: \nsoma(1), \nsubtracao(2), \nmultiplicar(3), \ndividir(4)\n: ");
+	scanf("%d", &escolha);
+
+	if (escolha == 1) {
+		scanf("%d %d", &n1, &n2);
+		soma(n1, n2);
+	} else if(escolha == 2) {
+		scanf("%d %d", &n1, &n2);
+		subtracao(n1, n2);
+	} else if(escolha == 3) {
+		scanf("%d %d", &n1, &n2);
+		multiplicacao(n1, n2);
+	} else if(escolha == 4) {
+		scanf("%d %d", &n1, &n2);
+		divisao(n1, n2);
+	}
+}
